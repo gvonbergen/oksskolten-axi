@@ -1,0 +1,17 @@
+{
+  "id": 123,
+  "title": "Cache poisoning via header smuggling",
+  "url": "https://blog.example.org/cache-poisoning",
+  "feed_id": 5,
+  "feed_name": "PortSwigger Research",
+  "category_name": "Web Security",
+  "published_at": "2025-02-26T00:00:00Z",
+  "lang": "en",
+  "summary": "How header smuggling leads to web cache poisoning.",
+  "full_text": "# Cache poisoning\n\nFull article body for research use. Padding to exceed the default text-mode snippet size: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+  "full_text_ja": " ja-version  ja-version  ja-version  ja-version  ja-version  ja-version  ja-version  ja-version  ja-version  ja-version ",
+  "read": false,
+  "bookmarked": false,
+  "liked": false,
+  "imageArchivingEnabled": true
+}

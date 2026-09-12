@@ -1,0 +1,35 @@
+{
+  "articles": [
+    {
+      "id": 101,
+      "title": "HTTP/3 connection coalescing",
+      "url": "https://blog.example.org/http3-coalescing",
+      "feed_id": 1,
+      "feed_name": "Cloudflare Blog",
+      "category_name": "Infrastructure",
+      "published_at": "2025-02-26T00:00:00Z",
+      "lang": "en",
+      "read": false,
+      "bookmarked": false,
+      "liked": false,
+      "score": 0.5
+    },
+    {
+      "id": 102,
+      "title": "Encrypted Client Hello rollout",
+      "url": "https://blog.example.org/ech-rollout",
+      "feed_id": 1,
+      "feed_name": "Cloudflare Blog",
+      "category_name": "Infrastructure",
+      "published_at": "2025-02-20T00:00:00Z",
+      "lang": "en",
+      "read": false,
+      "bookmarked": true,
+      "liked": false,
+      "score": 1.25
+    }
+  ],
+  "total": 2,
+  "has_more": false,
+  "total_without_floor": 4
+}

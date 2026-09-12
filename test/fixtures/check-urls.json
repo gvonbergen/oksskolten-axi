@@ -1,0 +1,6 @@
+{
+  "results": [
+    { "url": "https://blog.example.org/cache-poisoning", "exists": true, "article_id": 123 },
+    { "url": "https://blog.example.org/new-post", "exists": false }
+  ]
+}

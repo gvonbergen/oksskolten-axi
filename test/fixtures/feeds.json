@@ -1,0 +1,7 @@
+{
+  "feeds": [
+    { "id": 1, "name": "Cloudflare Blog", "category_id": 3, "category_name": "Infrastructure", "article_count": 412 },
+    { "id": 2, "name": "AWS Security Blog", "category_id": 3, "category_name": "Infrastructure", "article_count": 289 },
+    { "id": 5, "name": "PortSwigger Research", "category_id": 7, "category_name": "Web Security", "article_count": 134 }
+  ]
+}
