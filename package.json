@@ -1,0 +1,31 @@
+{
+  "name": "@oksskolten/cli",
+  "version": "0.1.0",
+  "description": "Agent-optimized command-line access to the Oksskolten article archive",
+  "type": "module",
+  "license": "MIT",
+  "bin": {
+    "oks": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@toon-format/toon": "^4.1.1",
+    "commander": "^15.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

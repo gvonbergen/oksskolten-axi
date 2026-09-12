@@ -1,0 +1,18 @@
+{
+  "articles": [
+    {
+      "id": 301,
+      "title": "Related: request smuggling primer",
+      "url": "https://blog.example.org/smuggling-primer",
+      "feed_name": "PortSwigger Research",
+      "published_at": "2025-01-12T00:00:00Z"
+    },
+    {
+      "id": 302,
+      "title": "Related: cache keys deep dive",
+      "url": "https://blog.example.org/cache-keys",
+      "feed_name": "Cloudflare Blog",
+      "published_at": "2025-01-30T00:00:00Z"
+    }
+  ]
+}

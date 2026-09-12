@@ -1,0 +1,22 @@
+{
+  "hits": [
+    {
+      "id": 201,
+      "title": "Semantic search over security blogs",
+      "url": "https://blog.example.org/semantic-search",
+      "feed_name": "PortSwigger Research",
+      "published_at": "2025-03-01T00:00:00Z"
+    },
+    {
+      "id": 202,
+      "title": "Hybrid retrieval in Meilisearch",
+      "url": "https://blog.example.org/hybrid-retrieval",
+      "feed_name": "PortSwigger Research",
+      "published_at": "2025-03-05T00:00:00Z"
+    }
+  ],
+  "estimatedTotalHits": 2,
+  "has_more": false,
+  "search_mode": "hybrid",
+  "query": "search infrastructure"
+}
