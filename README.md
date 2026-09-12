@@ -17,10 +17,26 @@ summarizes, ranks, or researches on its own.
 
 ## Install
 
+`@oksskolten/cli` is **not yet published to the npm registry** — today
+`npm install -g @oksskolten/cli` and `npx @oksskolten/cli` return 404. Install
+from a source checkout instead:
+
 ```sh
-npm install -g @oksskolten/cli        # provides the `oks` binary
-# or run ad hoc:
-npx @oksskolten/cli --help
+git clone https://github.com/gvonbergen/oksskolten-axi.git
+cd oksskolten-axi
+npm install
+npm run build                           # tsc → dist/
+node dist/cli.js --help                 # sanity check the built CLI
+```
+
+Run the built entry as `oks` by keeping a thin wrapper on your PATH
+(`dist/cli.js` resolves its imports against its real file path, so a
+symlink — what `npm link`/global installs create — would fail silently):
+
+```sh
+# ~/.local/bin/oks (chmod +x)
+#!/bin/sh
+exec node "$HOME/oksskolten-axi/dist/cli.js" "$@"
 ```
 
 Requires Node.js 22 or newer.
