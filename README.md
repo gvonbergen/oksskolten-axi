@@ -29,9 +29,9 @@ npm run build                           # tsc → dist/
 node dist/cli.js --help                 # sanity check the built CLI
 ```
 
-Run the built entry as `oks` by keeping a thin wrapper on your PATH
-(`dist/cli.js` resolves its imports against its real file path, so a
-symlink — what `npm link`/global installs create — would fail silently):
+Run the built entry as `oks` — the entrypoint compares resolved real
+paths, so a symlinked bin is fine (a plain `npm link`-style install works
+now); a thin wrapper is optional belt-and-braces:
 
 ```sh
 # ~/.local/bin/oks (chmod +x)
