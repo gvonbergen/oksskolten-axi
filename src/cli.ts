@@ -398,8 +398,26 @@ async function main(): Promise<void> {
   }
 }
 
-// Execute only when run directly (bin entry); tests import without side effects.
+// Execute only when the entry is invoked directly (bin entry); tests import this
+// module without side effects. Compare realpaths, not raw strings: `npm link` and
+// global installs reach the bin through a symlink, so process.argv[1] keeps the
+// invoked (link) path while import.meta.url is already the entry's realpath — a
+// raw comparison failed and every command silently exited 0.
+import { realpathSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-if (process.argv[1] && process.argv[1] === fileURLToPath(import.meta.url)) {
+
+function isDirectEntry(): boolean {
+  const invoked = process.argv[1];
+  if (!invoked) return false;
+  const entry = fileURLToPath(import.meta.url);
+  try {
+    return realpathSync(invoked) === realpathSync(entry);
+  } catch {
+    // argv[1] no longer resolves (deleted file): fall back to the raw comparison.
+    return invoked === entry;
+  }
+}
+
+if (isDirectEntry()) {
   await main();
 }
